@@ -12,30 +12,158 @@
 
 </head>
 <body>
+
+
     <div class="jumbotron text-center">
         <h1>My First Bootstrap Page</h1>
-        <p>Resize this responsive page to see the effect!</p> 
-    </div>
+        <p>Resize this responsive page to see the effect!</p>
         
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
+    </div>
+    
+
+        
+      <div class="container ">
+        <ul class="nav nav-tabs nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home">Active</a>
+             
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Link2</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item">link1</a>
+                    <a class="dropdown-item">link2</a>
+                    <a class="dropdown-item">link3</a>
+
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu1">Link</a>
+             
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu2">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" data-toggle="tab" href="#">Disabled</a>
+            </li>
+        </ul>
+        <div class="tab-content my-5">
+          <div id="home" class="container tab-pane active">
             <h3>Column 1</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
           </div>
-          <div class="col-sm-4">
+          <div id="menu1" class="container tab-pane fade">
+
             <h3>Column 2</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
           </div>
-          <div class="col-sm-4">
+          <div id="menu2" class="container tab-pane fade">
+
             <h3>Column 3</h3>        
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
           </div>
         </div>
       </div>
+
+
+      <div class="container">
+        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+            <ul class="navbar-nav">
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <li class="nav-item dropdown">
+                    
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Link1</a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link1</a>
+                        <a class="dropdown-item" href="#">Link2</a>
+                        <a class="dropdown-item" href="#">Link23</a>
+
+                    </div>
+                </li>
+
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Link2</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline" action="#" >
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+
+                            </div>
+
+                            <input type="text" placeholder="Search" class="form-control mr-sm-2">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </div>
+        
+                    </form>
+
+                </li>
+
+                
+                
+            </ul>
+            <!-- <span class="navbar-text">Navbar-text</span> -->
+
+        </nav>
+
+      </div>
+
+
+      <div class="container my-5">
+        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>    
+                </ul>
+              </div> 
+
+
+            
+
+        </nav>
+
+      </div>
+
+      
+
+
+     </div>
+
+     <div class="container">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Photos</a></li>
+            <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+            <li class="breadcrumb-item"><a href="#">Italy</a></li>
+            <li class="breadcrumb-item"><a href="#">Rome</a></li>
+
+        </ul>
+
+     </div>
 
 
       <div class="container-fluid pt-3 my-3 border" style="background-color: yellow;">
@@ -62,7 +190,7 @@
         <div class="col-sm-5" style="background-color: rgb(9, 122, 122) ;">3</div>
       </div>
 
-      <div class="container" style="background-color:aliceblue">
+      <div class="container my-5" style="background-color:aliceblue">
         <h1>h1 Bootstrap <mark>heading</mark> (2.5rem = 40px)<small>Secondary text</small></h1>
         <h2>h2 Bootstrap heading (2rem = 32px)<small>Secondary text</small></h2>
         <h3>h3 Bootstrap heading (1.75rem = 28px)<small>Secondary text</small></h3>
@@ -86,7 +214,7 @@
         
      </div>
 
-     <div class="container">
+     <div class="container my-5">
 
          <div class="row">
             <div class="col-sm-4"style="background-color: rgb(186, 186, 250) ;">
@@ -111,9 +239,35 @@
          </div>
 
      </div>
+     <div class="container bg-primary">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">home</button>
+            <button type="button" class="btn btn-primary">contact us</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">menu</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">tablet</a>
+                    <a class="dropdown-item" href="#">smartphone</a>
+
+                </div>
+            </div>
+            
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Sony</button>
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                  <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Tablet</a>
+                  <a class="dropdown-item" href="#">Smartphone</a>
+                </div>
+              </div>
+
+        </div>
+     </div>
 
 
-     <div class="container">
+     <div class="container my-5">
         <div class="row">
             <h2>Basic Table</h2>
             <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
@@ -147,6 +301,8 @@
          </div>
 
      </div>
+
+    
 
      <div class="container">
         <div class="row">
@@ -291,6 +447,52 @@
      </div>
 
      <div class="container">
+        
+            <div class="card-columns">
+
+                <div class="card">
+                    <!-- <div class="card-header">Basic card</div> -->
+                    <img class="card-img-top" src="../statics/images/paris.jpg" alt="card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some example text</p>
+                        <!-- s -->
+                        
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-outline-dark  btn-block stretched-link">submit</a></div>
+    
+                </div>
+                <div class="card">
+                    <!-- <div class="card-header">Basic card</div> -->
+                    <img class="card-img-top" src="../statics/images/sanfran.jpg" alt="card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some example text</p>
+                        <!-- s -->
+                        
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-outline-dark  btn-block stretched-link">submit</a></div>
+    
+                </div>
+
+                <div class="card">
+                    <!-- <div class="card-header">Basic card</div> -->
+                    <img class="card-img-top" src="../statics/images/newyork.jpg" alt="card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some example text</p>
+                        <!-- s -->
+                        
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-outline-dark  btn-block stretched-link">submit</a></div>
+    
+                </div>
+            
+        </div>
+
+     </div>
+
+     <div class="container">
         <div class="row">
             <h2>Basic Table</h2>
             <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
@@ -324,6 +526,54 @@
          </div>
 
      </div>
+
+     <div class="container my-5">
+
+         <div class="card-group">
+            <div class="card bg-dark text-white">
+                <div class="card-body text-center">
+
+                    <p class="card-text text-center">
+                        Some text inside the second card
+                        Some text inside the second card
+    
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="card bg-warning">
+                <div class="card-body text-center">
+   
+                    <p class="card-text text-center">
+                        Some text inside the second card
+    
+                    </p>
+                </div>
+    
+            </div>
+
+            <div class="card bg-danger">
+                <div class="card-body text-center">
+   
+                    <p class="card-text text-center">
+                        Some text inside the second card
+    
+                    </p>
+                </div>
+    
+            </div>
+         </div>
+
+         
+    
+        
+
+
+        
+
+     </div>
+
 
      <div class="container">
         <div class="row">
@@ -360,7 +610,63 @@
 
      </div>
 
-     <div class="container">
+
+     <div class="container my-5" style="background-color: #dee2e6;">
+        <div class="dropdown">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown-menu</button>
+                
+    
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">link1</a>
+                    <a class="dropdown-item" href="#">link2</a>
+                    <a class="dropdown-item" href="#">link3</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">another link</a>
+    
+                </div>
+
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown-menu</button>
+                
+    
+                <div class="dropdown-menu">
+                    <div class="dropdown-header">dropdown1</div>
+                    <a class="dropdown-item active" href="#">link1</a>
+                    <a class="dropdown-item" href="#">link2</a>
+                    <a class="dropdown-item" href="#">link3</a>
+                    <a class="dropdown-item-text" href="#">link3</a>
+                    <div class="dropdown-header">dropdown2</div>
+                    
+                    <a class="dropdown-item" href="#">another link</a>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container ">
+            <h2>Dropdowns</h2>
+            <p>The .dropup class makes the dropdown menu expand upwards instead of downwards:</p>
+            <div class="dropup">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropup button
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+              </div>
+            </div>
+          </div>
+
+        
+
+     </div>
+
+     <div class="container my-3">
         <div class="table-responsive">
             <h2>Basic Table</h2>
             <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
@@ -397,7 +703,7 @@
 
      
 
-     <div class="container col-12">
+     <div class="container my-5">
         <div class="row">
             <div  style="float:left;width:33.33%; text-align: center;"><img style="    width: 204px;height: auto;"  class="rounded" src="../statics/images/paris.jpg"></div>
             <div style="float:left;width:33.33%;text-align: center;"><img style="    width: 204px;height: auto;" class="rounded-circle" src="../statics/images/newyork.jpg"></div>
@@ -408,7 +714,7 @@
 
      <!-- <div style="clear: both;"></div> -->
 
-     <div class="container col-11 bg-secondary pt-3">
+     <div class="container pt-3 " style="background-color: #dee2e6;">
         <div class="row">
             <h2>Image</h2>
             <p>The .img-fluid class makes the image scale nicely to the parent element (resize the browser window to see the effect):</p>
@@ -420,6 +726,253 @@
 
 
      </div>
+     <div class="container my-5">
+
+         
+            <h2>Bootstrap Tutorial <span class="badge badge-pill badge-secondary">New</span></h2>
+            <div class="alert alert-success">
+                <strong>Success</strong>
+                Indicates a successful or positive action.
+            </div>
+
+            <div class="alert alert-info">
+                <strong>Info</strong>
+                This alert box indicates a neutral informative change or action.
+            </div>
+
+            <div class="alert alert-warning">
+                <strong>warning</strong>
+                This alert box indicates a neutral informative change or action.
+
+            </div>
+
+            <div class="alert alert-danger">
+                <strong>Error</strong>
+                You should <a href="#" class="alert-link">read this message</a>
+            </div>
+
+            <div class="alert alert-info alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong>
+                This alert box indicates a neutral informative change or action.
+
+
+            </div>
+            <div class="btn-vertical-group btn-group-lg">
+
+                <!-- <button type="button" class="btn">Basic</button> -->
+                <button type="button" class="btn btn-outline-warning btn-block"><span class="spinner-border spinner-border-sm"></span> waring</button>
+                <button type="button" class="btn btn-outline-success btn-block" disabled>success</button>
+                <button type="button" class="btn btn-outline-info btn-block"><span class="spinner-grow spinner-grow-sm"></span> info</button>
+                <button type="button" class="btn btn-outline-info btn-block"><span class="badge badge-primary">4</span> info</button>
+            
+            </div>
+
+         
+     </div>
+
+     <div class="container my-5">
+       
+            <h2>Hi Bootstrap</h2>
+            <p>The height of the progress bar is 16px by default. Use the CSS height property to change it. Note that you must set the same height for the progress container and the progress bar:</p>
+
+            <div class="progress" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 50%;;height:20px">50%</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 20%;;height:20px">50%</div>
+            </div>
+     </div>
+
+    <div class="container my-5">
+        <h3>Lists</h3>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item list-group-item-success list-group-item-action disabled">First item</li>
+            <li class="list-group-item list-group-item-success list-group-item-action">Second <span class="badge badge-primary">NEw</span></li>
+            <li class="list-group-item list-group-item-danger list-group-item-action">Third item</li>
+
+        </ul>
+
+     </div>
+     
+     
+    <div class="container my-5">
+        <h2>Simple Collapsible</h2>
+        <p>Click on the button to toggle between showing and hiding content.</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">click me</button>
+        <div id="demo" class="collapse">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo1">click me1</button>
+        <div id="demo1" class="collapse">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, unde iste? Neque, corporis. Corporis harum natus error sapiente modi officia vero praesentium. Similique exercitationem consectetur repellendus laboriosam, dicta illo fuga.
+        </div>
+      </div>
+
+
+
+
+    </div>
+    
+    <div class="container my-5">
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  Collapsible Group Item #1
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        Collapsible Group Item #2
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odio laudantium earum recusandae ea omnis rem pariatur fuga eligendi id, similique, voluptas dolorum quidem dicta, quibusdam maxime natus voluptatum labore!
+
+                    </div>
+                </div>
+
+            </div>
+
+        
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                        Collapsible Group Item #3
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odio laudantium earum recusandae ea omnis rem pariatur fuga eligendi id, similique, voluptas dolorum quidem dicta, quibusdam maxime natus voluptatum labore!
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                Collapsible Group Item #2
+              </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                  Collapsible Group Item #3
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+
+    </div>
+
+    <div class="container">
+        <!-- <p>pagination in bootstrap</p> -->
+
+         <ul class="pagination justify-content-center pagination-sm">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    
+         </ul>
+    </div>
+
+    <div class="container">
+        <h4>send message</h4>
+        <form action="#" class="my-4 was-validated">
+            <div class="form-row">
+                <label for="comment"></label>
+                <textarea  class="form-control" rows="5" id="comment" required></textarea>
+
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="col">
+                    <lable for="email" class="mr-sm-1">Email address:</lable>
+                    <input type="email" class="form-control mr-sm-2" placeholder="Enter Your Email" id="email" required></input>
+    
+                </div>
+    
+                <div class="col">
+                    <lable for="pwd" class="mr-sm-1">password:</lable>
+                    <input type="password" class="form-control mr-sm-2" placeholder="Enter password" id="password" required></input>
+    
+                </div>
+            </div>
+            <!-- <div class="form-check my-3">
+                <lable class="form-check-lable">
+                    <input type="radio" class="form-check-input">Option1
+
+                </lable>
+
+            </div> -->
+
+            <div class="form-group">
+                <lable for="sell">Select list</lable>
+                <select class="form-control" id="sell" >
+                    <option>Option1</option>
+                    <option>Option2</option>
+                    <option>Option3</option>
+                    <option>Option4</option>
+
+                </select>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block my-4">Submit</button>
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+    <div class="container bg-light my-5">
+       
+        <ul>
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li>Menu</li>
+
+        </ul>
+        
+
+    </div>
+
+
+
+
+
 
     
 </body>
