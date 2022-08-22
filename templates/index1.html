@@ -302,6 +302,13 @@
 
      </div>
 
+     <!-- <div class="container my-5">
+        <div>
+
+        </div>
+
+     </div> -->
+
     
 
      <div class="container">
@@ -425,6 +432,30 @@
             
     
          </div>
+
+     </div>
+
+     <div class="container my-5">
+
+        <div class="row">
+
+            <div class="col">
+                <a href="#" class="btn btn-light btn-block" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover over me</a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="btn btn-light btn-block" data-toggle="popover" data-placement="right" data-trigger="hover" title="Popover Header!" data-content="Some content inside the popover">Hover over me</a>
+            </div>
+
+            <div class="col">
+                <a href="#" class="btn btn-light btn-block" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">Click me</a>
+                
+
+            </div>
+
+        </div>
+
+
 
      </div>
 
@@ -1180,10 +1211,20 @@
 
 
 
-            <button type="submit" class="btn btn-primary btn-block my-4">Submit</button>
+            <button id="myBtn" type="submit" class="btn btn-primary btn-block my-4">Submit</button>
+
+            <div class="toast">
+                <div class="toast-header">
+                  Toast Header
+                </div>
+                <div class="toast-body">
+                  Some text inside the toast body
+                </div>
+              </div>
 
 
         </form>
+        
 
 
     </div>
@@ -1204,6 +1245,30 @@
         
 
     </div>
+
+    <script>
+        $(document).ready(function(){
+          $("#myBtn").click(function(){
+            $('.toast').toast('show');
+          });
+        });
+        </script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
+    <script>
+
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+
 
 
 
