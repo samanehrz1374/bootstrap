@@ -1,0 +1,23 @@
+
+
+#hero{
+    background: url(../images/hero-bg.jpg) top center;
+    height: 110vh;
+    background-size: cover;
+}
+
+.main{
+    /* margin-top: -100px; */
+}
+
+.icon-box {
+    padding: 40px 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.bx-receipt{
+    font-size: 40px;
+    color: #1977cc;
+    margin-bottom: 30px;
+}
